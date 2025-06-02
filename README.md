@@ -11,11 +11,14 @@ src/
 │       ├── domain/        # Business logic and domain models
 │       │   ├── models/    # Mongoose schemas and models
 │       │   ├── services/  # Business logic services
-│       │   └── repositories/ # Repository interfaces
 │       ├── infrastructure/# Infrastructure implementations
 │       │   └── repositories/ # MongoDB repository implementations
+│       │   └── storage/ # Storage functions
+│       │   └── storage/ # Storage functions
+│       │   └── services/ # Additional services (notification, messaging)
 │       └── interface/     # API interface layer
 │           ├── controllers/ # Request handlers
+│           ├── middlewares/ # Middlewares for filtering
 │           ├── routes/    # Route definitions
 │           └── validators/ # Request validation schemas
 │
