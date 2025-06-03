@@ -182,7 +182,7 @@ const dbConfig = {
 ## Getting Started
 
 ### Prerequisites
-- Node.js >= 14.0.0
+- Node.js >= 18.0.0
 - MongoDB
 - MySQL (for legacy data)
 
@@ -224,17 +224,17 @@ JWT_EXPIRES_IN=24h
 
 ## Development Guidelines
 
-### 1. Adding a New Module
+### 1. Adding a New Application
 1. Create a new directory under `applications/`
 2. Follow the clean architecture pattern:
    ```
-   module/
+   app-name/
    ├── domain/
    │   ├── models/
    │   ├── services/
-   │   └── repositories/
    ├── infrastructure/
    │   └── repositories/
+   │   └── storage/
    └── interface/
        ├── controllers/
        ├── routes/
