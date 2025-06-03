@@ -14,7 +14,6 @@ src/
 │       ├── infrastructure/# Infrastructure implementations
 │       │   └── repositories/ # MongoDB repository implementations
 │       │   └── storage/ # Storage functions
-│       │   └── storage/ # Storage functions
 │       │   └── services/ # Additional services (notification, messaging)
 │       └── interface/     # API interface layer
 │           ├── controllers/ # Request handlers
@@ -62,6 +61,8 @@ The `applications` directory contains all application-specific modules. Each app
 
 - **Infrastructure Layer**: Contains external service implementations
   - `repositories/`: MongoDB repository implementations
+  - `storage/`: Storage function for application
+  - `services/`: Custom services (mail, notification)
 
 - **Interface Layer**: Contains API endpoints and request handling
   - `controllers/`: Request handlers
