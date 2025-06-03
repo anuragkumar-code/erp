@@ -54,12 +54,11 @@ src/
 ## Architecture Overview
 
 ### 1. Applications Layer
-The `applications` directory contains all application-specific modules. Each module follows a clean architecture pattern:
+The `applications` directory contains all application-specific modules. Each applications follows a clean architecture pattern:
 
 - **Domain Layer**: Contains business logic, models, and repository interfaces
   - `models/`: Mongoose schemas and models
   - `services/`: Business logic implementation
-  - `repositories/`: Repository interfaces
 
 - **Infrastructure Layer**: Contains external service implementations
   - `repositories/`: MongoDB repository implementations
@@ -68,6 +67,7 @@ The `applications` directory contains all application-specific modules. Each mod
   - `controllers/`: Request handlers
   - `routes/`: Route definitions
   - `validators/`: Request validation schemas
+  - `middelwares/`: Internal middelwares
 
 ### 2. Core Layer
 The `core` directory contains essential system functionality:
